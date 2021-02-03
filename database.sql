@@ -1,7 +1,11 @@
 set foreign_key_checks = 0;
-drop table if exists films;
-drop table if exists directors;
-drop table if exists actors;
+drop table if exists film;
+drop table if exists director;
+drop table if exists actor;
+drop table if exists category;
+drop table if exists film_actor;
+drop table if exists film_director;
+drop table if exists film_category;
 set foreign_key_checks = 1;
 
 create table if not exists film
@@ -28,11 +32,6 @@ create table if not exists category
     id   int unsigned primary key auto_increment not null,
     name varchar(255)                            not null,
     slug varchar(255)                            not null
-) engine = InnoDB;
-create table if not exists actor
-(
-    id   int unsigned primary key auto_increment not null,
-    name varchar(255)                            not null
 ) engine = InnoDB;
 
 create table if not exists film_actor(
