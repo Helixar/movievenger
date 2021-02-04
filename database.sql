@@ -8,7 +8,6 @@ drop table if exists category;
 drop table if exists film_actor;
 drop table if exists film_director;
 drop table if exists film_category;
-drop table if exists user_category;
 set foreign_key_checks = 1;
 
 create table if not exists user
