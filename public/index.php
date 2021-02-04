@@ -25,5 +25,5 @@ if ($path === '/') {
 
 }else {
     http_response_code(404);
-    require __DIR__ . '/views/pages/404.php';
+    require __DIR__ . '../views/404.php';
 }
