@@ -3,3 +3,5 @@ vendor
 config.php
 databaseCorinne.sql
 fillCorinne.sql
+databaseKhang.sql
+fillKhang.sql
