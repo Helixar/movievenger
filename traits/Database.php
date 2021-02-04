@@ -4,14 +4,7 @@ trait Database
 {
     private function getConfig(): array
     {
-        return [
-            'database' => [
-                'port' => 3306,
-                'name' => 'movievenger',
-                'login' => 'root',
-                'password' => '',
-            ],
-        ];
+        return require '../config.php';
     }
 
     private function initPdo()
