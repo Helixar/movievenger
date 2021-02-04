@@ -1,5 +1,5 @@
 set foreign_key_checks = 0;
-drop table if exists user;
+drop table if exists `user`;
 drop table if exists film;
 drop table if exists vote;
 drop table if exists director;
@@ -10,7 +10,7 @@ drop table if exists film_director;
 drop table if exists film_category;
 set foreign_key_checks = 1;
 
-create table if not exists user
+create table if not exists `user`
 (
     id       int unsigned primary key auto_increment not null,
     username varchar(255)                            not null,

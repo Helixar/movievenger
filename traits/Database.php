@@ -8,8 +8,8 @@ trait Database
             'database' => [
                 'port' => 3306,
                 'name' => 'movievenger',
-                'login' => 'helixar',
-                'password' => 'lab',
+                'login' => 'root',
+                'password' => '',
             ],
         ];
     }
