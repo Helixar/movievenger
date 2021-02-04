@@ -27,7 +27,7 @@ trait Database
         }
     }
 
-    public function prepare(string $query, array $values = null, $fetchAll = true): bool|array|PDOStatement
+    public function prepare(string $query, array $values = null, $fetchAll = true)
     {
         $statement = $this->initPdo()->prepare($query);
         $statement->execute($values);
