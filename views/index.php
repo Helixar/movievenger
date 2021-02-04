@@ -8,7 +8,7 @@
 </head>
 <body>
 <!--HEADER--->
-<div class="container-fluid  bg-dark header">
+<div class="container-fluid  bg-dark header p-2">
     <h1 class="text-center text-light">MOVIE VENGER</h1>
 </div>
 <!---->
@@ -62,27 +62,27 @@
 <!----FIN MENU---->
 <!--BLOC BOUTON CATEGORIES-->
 <div class="container">
-    <nav class="container navbar navbar-expand-lg md-10">
-        <ul class="navbar-nav  mx-auto md-10">
-            <li class="nav-item active">
+    <nav class="container navbar navbar-expand-lg">
+        <ul class="navbar-nav  mx-auto">
+            <li class="nav-item active p-2">
                 <a class="nav-link btn btn-outline-danger" href="#" role="button">Catégorie 1</a>
             </li>
-            <li class="nav-item active">
+            <li class="nav-item active p-2">
                 <a class="nav-link btn btn-outline-danger" href="#" role="button">Catégorie 2</a>
             </li>
-            <li class="nav-item active">
+            <li class="nav-item active p-2">
                 <a class="nav-link btn btn-outline-danger" href="#" role="button">Catégorie 3</a>
             </li>
-            <li class="nav-item active">
+            <li class="nav-item active p-2">
                 <a class="nav-link btn btn-outline-danger" href="#" role="button">Catégorie 4</a>
             </li>
-            <li class="nav-item active">
+            <li class="nav-item active p-2">
                 <a class="nav-link btn btn-outline-danger" href="#" role="button">Catégorie 5</a>
             </li>
-            <li class="nav-item active">
+            <li class="nav-item active p-2">
                 <a class="nav-link btn btn-outline-danger" href="#" role="button">Catégorie 6</a>
             </li>
-            <li class="nav-item active">
+            <li class="nav-item active p-2">
                 <a class="nav-link btn btn-outline-danger" href="#" role="button">Catégorie 7</a>
             </li>
 
