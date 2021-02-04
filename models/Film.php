@@ -9,7 +9,7 @@ class Film
     public function getAll(): array
     {
         return DAO::getInstance()
-            ->execute('select film.name, film.release_date,avg(v.note) as note from film
+            ->execute('select film.name, film.release_date, avg(v.note) as note from film
                             inner join vote v on film.id = v.id_film group by film.name;')
             ->fetchAll();
     }
