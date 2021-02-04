@@ -1,15 +1,3 @@
-set foreign_key_checks = 0;
-truncate table `user`;
-truncate table film;
-truncate table vote;
-truncate table director;
-truncate table actor;
-truncate table category;
-truncate table film_actor;
-truncate table film_director;
-truncate table film_category;
-set foreign_key_checks = 1;
-
 insert into `user` (username, password, email, admin)
 values ('Helixar', 'blabla', 'contact@cloudnode.fr', 1),
        ('Rémi', 'blabla', 'contact@remi.fr', 0);
