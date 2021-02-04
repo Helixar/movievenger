@@ -1,0 +1,70 @@
+/* fonts */
+
+@font-face {
+    font-family: cinema;
+    src: url(../movievenger/typos/CinemaCapitol.otf);
+}
+
+@font-face {
+    font-family: cinemaGrafik;
+    src: url(../movievenger/typos/Cinematografica-Regular-trial.ttf);
+}
+
+body {
+    background-image: url(./image/background.jpg);
+    background-size: cover;
+}
+
+.header {
+    background-color: black;
+    border-bottom: solid 2px #960100;
+}
+
+h1 {
+    font-family: 'cinemaGrafik';
+    font-size: 8em;
+}
+
+.nav-link {
+    color: white;
+}
+
+.nav-link:hover {
+    color: #960100;
+}
+
+.titreAjout {
+    color: #960100;
+    text-decoration: underline;
+}
+
+.bouton {
+    border: solid 1px #960100;
+    border-radius: 7px;
+}
+
+.btn {
+    border: solid 1px #960100;
+    border-radius: 7px;
+    color: white;
+    background-color: #960100;
+}
+
+.btn:hover {
+    color: #960100;
+    box-shadow: 4px 4px 2px 2px rgba(150, 1, 0, .3);
+}
+
+.blocCarte {
+    background-color: white;
+    margin-bottom: 1em;
+}
+
+h4 {
+    font-family: 'cinema';
+    font-size: 3em;
+}
+
+.footer {
+    background-color: black;
+}

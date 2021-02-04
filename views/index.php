@@ -4,11 +4,12 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" href="../style.css">
     <title>Movie Venger</title>
 </head>
 <body>
 <!--HEADER--->
-<div class="container-fluid  bg-dark header p-2">
+<div class="container-fluid p-4 header">
     <h1 class="text-center text-light">MOVIE VENGER</h1>
 </div>
 <!---->
@@ -16,7 +17,7 @@
 <div class="container">
 <nav class="container navbar navbar-expand-lg">
             <!--menu mobile-->
-            <div class="pos-f-t">
+            <div class="pos-f-t menu">
                 <div class="collapse" id="navbarToggleExternalContent">
                 <ul class="navbar-nav">
                     <li class="text-white nav-item active">
@@ -31,6 +32,34 @@
                 </ul>
                 </div>
             </div>
+            <a class="btn d-lg-none" data-toggle="collapse" href="#collapseExample" role="button" aria-expanded="false" aria-controls="collapseExample">
+                Catégories
+            </a>
+            <div class="collapse" id="collapseExample">
+                <div class="card card-body">
+                    <p>
+                        <a href="#">Catégorie 1</a>
+                    </p>
+                    <p>
+                        <a href="#">Catégorie 2</a>
+                    </p>
+                    <p>
+                        <a href="#">Catégorie 3</a>
+                    </p>
+                    <p>
+                        <a href="#">Catégorie 4</a>
+                    </p>
+                    <p>
+                        <a href="#">Catégorie 5</a>
+                    </p>
+                    <p>
+                        <a href="#">Catégorie 6</a>
+                    </p>
+                    <p>
+                        <a href="#">Catégorie 7</a>
+                    </p>
+                </div>
+            </div>
                 <!--bouton hamburger-->
                 <nav class="navbar navbar-dark " id="bouttonMobile">
                     <button class="navbar-toggler bg-dark" type="button" data-toggle="collapse" data-target="#navbarToggleExternalContent" aria-controls="navbarToggleExternalContent" aria-expanded="false" aria-label="Toggle navigation">
@@ -39,14 +68,14 @@
                 </nav>
             <!--fin menu mobile--->
             <!--menu bureau-->
-            <div class="collapse navbar-collapse" id="navbarNav">
+            <div class="collapse navbar-collapse menu" id="navbarNav">
                 <ul class="navbar-nav  mx-auto">
                     <li class="nav-item active">
                         <a class="nav-link" href="#">Accueil<span class="sr-only"></span></a>
                     </li>
                 </ul>
             </div>
-            <div class="collapse navbar-collapse" id="navbarNav">
+            <div class="collapse navbar-collapse menu" id="navbarNav">
                 <ul class="navbar-nav  mx-auto">
                     <li class="nav-item">
                         <a class="nav-link" href="#">Inscription</a>
@@ -60,40 +89,141 @@
 </div>
 <!--fin menu bureau--->
 <!----FIN MENU---->
-<!--BLOC BOUTON CATEGORIES-->
-<div class="container">
-    <nav class="container navbar navbar-expand-lg">
-        <ul class="navbar-nav  mx-auto">
-            <li class="nav-item active p-2">
-                <a class="nav-link btn btn-outline-danger" href="#" role="button">Catégorie 1</a>
+<!--BLOC BOUTON CATEGORIES bureau-->
+<div class="container d-none d-lg-block d-xl-block">
+    <nav class="container navbar navbar-expand-lg ">
+        <ul class="navbar-nav mx-auto ">
+            <li class="nav-item active p-2 m-2 bouton">
+                <a class="nav-link btn" href="#" role="button">Catégorie 1</a>
             </li>
-            <li class="nav-item active p-2">
-                <a class="nav-link btn btn-outline-danger" href="#" role="button">Catégorie 2</a>
+            <li class="nav-item active p-2 m-2 bouton">
+                <a class="nav-link btn" href="#" role="button">Catégorie 2</a>
             </li>
-            <li class="nav-item active p-2">
-                <a class="nav-link btn btn-outline-danger" href="#" role="button">Catégorie 3</a>
+            <li class="nav-item active p-2 m-2 bouton">
+                <a class="nav-link btn " href="#" role="button">Catégorie 3</a>
             </li>
-            <li class="nav-item active p-2">
-                <a class="nav-link btn btn-outline-danger" href="#" role="button">Catégorie 4</a>
+            <li class="nav-item active p-2 m-2 bouton">
+                <a class="nav-link btn" href="#" role="button">Catégorie 4</a>
             </li>
-            <li class="nav-item active p-2">
-                <a class="nav-link btn btn-outline-danger" href="#" role="button">Catégorie 5</a>
+            <li class="nav-item active p-2 m-2 bouton">
+                <a class="nav-link btn " href="#" role="button">Catégorie 5</a>
             </li>
-            <li class="nav-item active p-2">
-                <a class="nav-link btn btn-outline-danger" href="#" role="button">Catégorie 6</a>
+            <li class="nav-item active p-2 m-2 bouton">
+                <a class="nav-link btn " href="#" role="button">Catégorie 6</a>
             </li>
-            <li class="nav-item active p-2">
-                <a class="nav-link btn btn-outline-danger" href="#" role="button">Catégorie 7</a>
+            <li class="nav-item active p-2 m-2 bouton">
+                <a class="nav-link btn" href="#" role="button">Catégorie 7</a>
             </li>
-
-
-</ul>
-
-
-</nav>
-
-
+        </ul>
+    </nav>
 </div>
+<!--Contenu-->
+<div class="container carte">
+    <div class="container bg-light">
+        <h4 class="text-center">
+            <a href="#" class="nav-link titreAjout">Ajouter un film ici</a>
+        </h4>
+    </div>
+    <div class="container blocCarte d-flex flex-wrap justify-content-center p-2">
+        <div class="card m-2" style="width: 12rem;">
+            <a href="#"><img src="../image/affiche1.jpg" class="card-img-top" alt="..."></a>
+                <div class="card-body">
+                    <p class="card-text">Nom du film</p>
+                    <p class="card-text">Date de sortie</p>
+                    <p class="card-text">Note *****</p>
+                </div>
+        </div>
+        <div class="card m-2" style="width: 12rem;">
+            <a href="#"><img src="../image/affiche2.jpg" class="card-img-top" alt="..."></a>
+                <div class="card-body">
+                    <p class="card-text">Nom du film</p>
+                    <p class="card-text">Date de sortie</p>
+                    <p class="card-text">Note *****</p>
+                </div>
+        </div>
+        <div class="card m-2" style="width: 12rem;">
+            <a href="#"><img src="../image/affiche3.jpg" class="card-img-top" alt="..."></a>
+                <div class="card-body">
+                    <p class="card-text">Nom du film</p>
+                    <p class="card-text">Date de sortie</p>
+                    <p class="card-text">Note *****</p>
+                </div>
+        </div>
+        <div class="card m-2" style="width: 12rem;">
+        <a href="#"><img src="../image/affiche4.jpg" class="card-img-top" alt="..."></a>
+                <div class="card-body">
+                    <p class="card-text">Nom du film</p>
+                    <p class="card-text">Date de sortie</p>
+                    <p class="card-text">Note *****</p>
+                </div>
+        </div>
+        <div class="card m-2" style="width: 12rem;">
+        <a href="#"><img src="../image/affiche5.jpg" class="card-img-top" alt="..."></a>
+                <div class="card-body">
+                    <p class="card-text">Nom du film</p>
+                    <p class="card-text">Date de sortie</p>
+                    <p class="card-text">Note *****</p>
+                </div>
+        </div>
+        <div class="card m-2" style="width: 12rem;">
+        <a href="#"><img src="../image/affiche6.jpg" class="card-img-top" alt="..."></a>
+                <div class="card-body">
+                    <p class="card-text">Nom du film</p>
+                    <p class="card-text">Date de sortie</p>
+                    <p class="card-text">Note *****</p>
+                </div>
+        </div>
+        <div class="card m-2" style="width: 12rem;">
+        <a href="#"><img src="../image/affiche1.jpg" class="card-img-top" alt="..."></a>
+                <div class="card-body">
+                    <p class="card-text">Nom du film</p>
+                    <p class="card-text">Date de sortie</p>
+                    <p class="card-text">Note *****</p>
+                </div>
+        </div>
+        <div class="card m-2" style="width: 12rem;">
+        <a href="#"><img src="../image/affiche1.jpg" class="card-img-top" alt="..."></a>
+                <div class="card-body">
+                    <p class="card-text">Nom du film</p>
+                    <p class="card-text">Date de sortie</p>
+                    <p class="card-text">Note *****</p>
+                </div>
+        </div>
+        <div class="card m-2" style="width: 12rem;">
+        <a href="#"><img src="../image/affiche1.jpg" class="card-img-top" alt="..."></a>
+                <div class="card-body">
+                    <p class="card-text">Nom du film</p>
+                    <p class="card-text">Date de sortie</p>
+                    <p class="card-text">Note *****</p>
+                </div>
+        </div>
+        <div class="card m-2" style="width: 12rem;">
+        <a href="#"><img src="../image/affiche1.jpg" class="card-img-top" alt="..."></a>
+                <div class="card-body">
+                    <p class="card-text">Nom du film</p>
+                    <p class="card-text">Date de sortie</p>
+                    <p class="card-text">Note *****</p>
+                </div>
+        </div>
+    </div>
+</div>
+<!---FOOTER---->
+<div class="container-fluid footer p-2">
+    <ul class="navbar-nav text-center">
+        <li class="nav-item active">
+            <a class="nav-link" href="#">DMCA<span class="sr-only"></span></a>
+        </li>
+        <li class="nav-item active">
+            <a class="nav-link" href="#">Contact<span class="sr-only"></span></a>
+        </li>
+    </ul>
+    <p class="text-center text-light ">Copyright</p>
+</div>
+
+
+
+
+
 
 
 
