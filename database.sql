@@ -25,7 +25,6 @@ create table if not exists film
     id           int unsigned primary key auto_increment not null,
     id_user      int unsigned                            not null,
     name         varchar(255)                            not null,
-    note         int unsigned                            not null,
     length       int unsigned                            not null,
     synopsis     text                                    not null,
     release_date date                                    not null,
@@ -77,12 +76,6 @@ create table if not exists film_category
     id_category int unsigned not null
 ) engine = InnoDB;
 
-create table if not exists user_category
-(
-    id_user    int unsigned not null,
-    id_category int unsigned not null
-) engine = InnoDB;
-
 alter table film
     add constraint film_user_id foreign key (id_user) references user (id);
 
@@ -105,9 +98,4 @@ alter table vote
     add constraint vote_pk primary key (id_film, id_user),
     add constraint vote_id_film foreign key (id_film) references film (id),
     add constraint vote_id_user foreign key (id_user) references user (id);
-
-alter table user_category
-    add constraint user_category_pk primary key (id_user, id_category),
-    add constraint user_category_id_user foreign key (id_user) references user (id),
-    add constraint user_category_id_category foreign key (id_category) references category (id);
 
