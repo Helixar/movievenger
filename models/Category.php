@@ -9,7 +9,10 @@ class Category
     public function getAll(): array
     {
         return DAO::getInstance()
-            ->execute('select * from category')
+            ->execute('select * from category where id = :id or name = :nameblabla', [
+                ':id' => 1,
+                ':nameblabla' => 'Thriller'
+            ])
             ->fetchAll();
     }
 
