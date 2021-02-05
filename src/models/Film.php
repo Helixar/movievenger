@@ -27,7 +27,7 @@ class Film
     public function getByCategorySlug(string $slug): array
     {
         return DAO::getInstance()
-            ->execute('select film.name, film.release_date, film.length, film.image, ifnull(round(avg(v.note), 1), 0) as note, c.name as category_name from film
+            ->execute('select film.id, film.name, film.release_date, film.length, film.image, ifnull(round(avg(v.note), 1), 0) as note, c.name as category_name from film
                              inner join film_category fc on film.id = fc.id_film
                              inner join category c on fc.id_category = c.id
                              left join vote v on film.id = v.id_film where c.slug = :slug group by film.name;', [
