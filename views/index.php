@@ -126,7 +126,7 @@
     </div>
     <div class="container blocCarte d-flex flex-wrap justify-content-center p-2">
         <div class="card m-2" style="width: 12rem;">
-            <a href="#"><img src="../image/affiche1.jpg" class="card-img-top" alt="..."></a>
+            <a href="#" class="text-center"><img src="../image/affiche1.jpg" class="card-img-top" alt="..." style="width: 11.5rem; height:17rem;"></a>
                 <div class="card-body">
                     <p class="card-text">Nom du film</p>
                     <p class="card-text">Date de sortie</p>
@@ -134,7 +134,7 @@
                 </div>
         </div>
         <div class="card m-2" style="width: 12rem;">
-            <a href="#"><img src="../image/affiche2.jpg" class="card-img-top" alt="..."></a>
+            <a href="#" class="text-center"><img src="../image/affiche2.jpg" class="card-img-top" alt="..." style="width: 11.5rem; height:17rem;"></a>
                 <div class="card-body">
                     <p class="card-text">Nom du film</p>
                     <p class="card-text">Date de sortie</p>
@@ -142,7 +142,7 @@
                 </div>
         </div>
         <div class="card m-2" style="width: 12rem;">
-            <a href="#"><img src="../image/affiche3.jpg" class="card-img-top" alt="..."></a>
+            <a href="#" class="text-center"><img src="../image/affiche3.jpg" class="card-img-top" alt="..." style="width: 11.5rem; height:17rem;"></a>
                 <div class="card-body">
                     <p class="card-text">Nom du film</p>
                     <p class="card-text">Date de sortie</p>
@@ -150,7 +150,7 @@
                 </div>
         </div>
         <div class="card m-2" style="width: 12rem;">
-        <a href="#"><img src="../image/affiche4.jpg" class="card-img-top" alt="..."></a>
+        <a href="#" class="text-center"><img src="../image/affiche4.jpg" class="card-img-top" alt="..." style="width: 11.5rem; height:17rem;"></a>
                 <div class="card-body">
                     <p class="card-text">Nom du film</p>
                     <p class="card-text">Date de sortie</p>
@@ -158,7 +158,7 @@
                 </div>
         </div>
         <div class="card m-2" style="width: 12rem;">
-        <a href="#"><img src="../image/affiche5.jpg" class="card-img-top" alt="..."></a>
+        <a href="#" class="text-center"><img src="../image/affiche5.jpg" class="card-img-top" alt="..." style="width: 11.5rem; height:17rem;"></a>
                 <div class="card-body">
                     <p class="card-text">Nom du film</p>
                     <p class="card-text">Date de sortie</p>
@@ -166,7 +166,7 @@
                 </div>
         </div>
         <div class="card m-2" style="width: 12rem;">
-        <a href="#"><img src="../image/affiche6.jpg" class="card-img-top" alt="..."></a>
+        <a href="#" class="text-center"><img src="../image/affiche6.jpg" class="card-img-top" alt="..." style="width: 11.5rem; height:17rem;"></a>
                 <div class="card-body">
                     <p class="card-text">Nom du film</p>
                     <p class="card-text">Date de sortie</p>
@@ -174,7 +174,7 @@
                 </div>
         </div>
         <div class="card m-2" style="width: 12rem;">
-        <a href="#"><img src="../image/affiche1.jpg" class="card-img-top" alt="..."></a>
+        <a href="#" class="text-center"><img src="../image/affiche1.jpg" class="card-img-top" alt="..." style="width: 11.5rem; height:17rem;"></a>
                 <div class="card-body">
                     <p class="card-text">Nom du film</p>
                     <p class="card-text">Date de sortie</p>
@@ -182,7 +182,7 @@
                 </div>
         </div>
         <div class="card m-2" style="width: 12rem;">
-        <a href="#"><img src="../image/affiche1.jpg" class="card-img-top" alt="..."></a>
+        <a href="#" class="text-center"><img src="../image/affiche1.jpg" class="card-img-top" alt="..." style="width: 11.5rem; height:17rem;"></a>
                 <div class="card-body">
                     <p class="card-text">Nom du film</p>
                     <p class="card-text">Date de sortie</p>
@@ -190,7 +190,7 @@
                 </div>
         </div>
         <div class="card m-2" style="width: 12rem;">
-        <a href="#"><img src="../image/affiche1.jpg" class="card-img-top" alt="..."></a>
+        <a href="#" class="text-center"><img src="../image/affiche1.jpg" class="card-img-top" alt="..." style="width: 11.5rem; height:17rem;"></a>
                 <div class="card-body">
                     <p class="card-text">Nom du film</p>
                     <p class="card-text">Date de sortie</p>
@@ -198,7 +198,7 @@
                 </div>
         </div>
         <div class="card m-2" style="width: 12rem;">
-        <a href="#"><img src="../image/affiche1.jpg" class="card-img-top" alt="..."></a>
+        <a href="#" class="text-center"><img src="../image/affiche1.jpg" class="card-img-top" alt="..." style="width: 11.5rem; height:17rem;"></a>
                 <div class="card-body">
                     <p class="card-text">Nom du film</p>
                     <p class="card-text">Date de sortie</p>
