@@ -9,11 +9,29 @@ class Category
     public function getAll(): array
     {
         return DAO::getInstance()
-            ->execute('select * from category where id = :id or name = :nameblabla', [
-                ':id' => 1,
-                ':nameblabla' => 'Thriller'
-            ])
+            ->execute('select * from category')
             ->fetchAll();
+    }
+
+    public function logUser(string $Pseudo, string $Password): array
+    {
+        return DAO::getInstance()
+        ->execute("SELECT * FROM user WHERE username = :pseudo AND password = :password", [
+            ':pseudo' =>$Pseudo,
+            ':password' => $Password
+        ])
+        ->fetch();
+    }
+
+    public function addUser(string $Pseudo, string $Password, string $Email)
+    {
+        return DAO::getInstance()
+        ->execute("INSERT INTO user (id, username, password, email) VALUES (NULL, :username, :password, :email)", [
+            ':id' =>'',
+            ':username' => $Pseudo,
+            ':password' => $Password,
+            ':email' => $Email
+        ]);
     }
 
     public function getFilmsBySlug(string $slug): array
