@@ -29,7 +29,7 @@ create table if not exists film
     name         varchar(255)                            not null,
     length       int unsigned                            not null,
     synopsis     text                                    not null,
-    release_date date                                    not null,
+    release_date datetime                                not null,
     image        varchar(255)                            not null,
     url          text,
     published_at datetime
