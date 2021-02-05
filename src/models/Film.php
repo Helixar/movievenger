@@ -23,12 +23,15 @@ class Film
             ->fetch();
     }
 
-    public function getByCategory(int $id): array
+    public function getByCategorySlug(string $slug): array
     {
         return DAO::getInstance()
-            ->execute('select film.name as film_name, film.length as film_length, c.name as category_name from film
+            ->execute( 'select film.name, film.release_date, film.length, film.image, avg(v.note) as note, c.name as category_name from film
                              inner join film_category fc on film.id = fc.id_film
-                             inner join category c on fc.id_category = c.id where c.id = 1;')
+                             inner join category c on fc.id_category = c.id
+                             left join vote v on film.id = v.id_film where c.slug = :slug group by film.name;', [
+            ':slug' => $slug
+        ])
             ->fetchAll();
     }
 }
