@@ -92,7 +92,7 @@
     <div class="container carte my-5">
         <div class="row justify-content-center g-5 bg-light p-2 rounded-lg">
             <div class="col-12 col-md-6 col-lg-3 card" style="width: 12rem;">
-                <a href="film?id=<?= $film['id'] ?>"><img src="dist/img/<?= $film['image'] ?>" class="card-img-top rounded mt-3" alt="..."></a>
+                <img src="dist/img/<?= $film['image'] ?>" class="card-img-top rounded mt-3" alt="...">
                 <div class="card-body">
                     <p class="card-text"><?= $film['name'] ?></p>
                     <p class="card-text"><?= $film['release_date'] ?></p>
