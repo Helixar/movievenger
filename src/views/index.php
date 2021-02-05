@@ -12,7 +12,7 @@
 <body>
     <!--HEADER--->
     <div class="container-fluid p-4 header">
-        <h1 class="text-center text-light">MOVIE VENGER</h1>
+        <h1 class="text-center text-light"><a href="/" class="nav-link">MOVIE VENGER</a></h1>
     </div>
     <!---->
     <!--MENU-->
