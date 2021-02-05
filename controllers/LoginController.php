@@ -1,5 +1,4 @@
 <?php
-session_start(); 
 if (isset($_POST['username'])) { 
 
     if (empty($_POST['username'])) {
@@ -13,12 +12,11 @@ if (isset($_POST['username'])) {
             $Pseudo = htmlentities(trim($_POST['username']), ENT_QUOTES, "ISO-8859-15"); 
             $Password = htmlentities($_POST['password'], ENT_QUOTES, "ISO-8859-15");
             
-            $mysqli = mysqli_connect("localhost", "root", "", "movievenger");
-            
             if (!$mysqli) {
                 echo "Erreur de connexion à la base de données.";
             } else {
-                $Requete = mysqli_query($mysqli, "SELECT * FROM user WHERE username = '" . $Pseudo . "' AND password = '" . $Password . "'");
+                $login = new Category();
+                $login->logUser($Pseudo, $Password); 
 
                 if (mysqli_num_rows($Requete) == 0) {
                     echo "L'identifiant ou le mot de passe est incorrect.";
