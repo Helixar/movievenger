@@ -22,10 +22,9 @@ if (isset($_POST['username'])) {
                     echo "L'identifiant ou le mot de passe est incorrect.";
                 } else {
                     $_SESSION['pseudo'] = $Pseudo; 
-                    echo "<p>Vous êtes à présent connecté !</p>";
+                    header("Location: index.php");
                 }
             }
-            $lBdd = null;
         }
     }
 }
