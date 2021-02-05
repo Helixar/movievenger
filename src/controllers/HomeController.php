@@ -9,7 +9,7 @@ class HomeController
 
         $categoryClass = new Category();
         $category_list = $categoryClass->getAll();
-        debug($category_list);
+        // debug($category_list);
 
         require '../src/views/index.php';
     }
