@@ -35,7 +35,6 @@ values ('SF / Fantastique', 'sf-fantastique'),
        ('Animation', 'animation'),
        ("Cinéma d'auteur", "cinema-d-auteur");
 
-
 insert into director (name)
 values ('Zack Snider'),
        ('Christopher Nolan');
