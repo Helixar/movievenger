@@ -18,14 +18,14 @@ require '../src/models/Film.php';
 require '../src/models/Category.php';
 require '../src/controllers/HomeController.php';
 
-showSession(true);
-
 $home = new HomeController;
 if ($path === '/') {
     $home->index(!empty($_GET['category']) ? $_GET['category'] : false);
-}elseif ($path === '/add') {
+} elseif ($path === '/add') {
     $home->add();
-}else {
+} elseif ($path === '/film') {
+    $home->film(!empty($_GET['id']) ? $_GET['id'] : false);
+} else {
     http_response_code(404);
     require __DIR__ . '/../views/404.php';
 }

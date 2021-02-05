@@ -9,7 +9,6 @@ class HomeController
 
         $categoryClass = new Category();
         $category_list = $categoryClass->getAll();
-        debug($category_list);
 
         require '../src/views/index.php';
     }
@@ -17,5 +16,12 @@ class HomeController
     public function add(): void
     {
         require '../src/views/formulaireFilm.php';
+    }
+
+    public function film(?string $id): void
+    {
+        $filmClass = new Film();
+        $film = !empty($id) ? $filmClass->getById(intval($id)) : false;
+        require '../src/views/affichageFilm.php';
     }
 }

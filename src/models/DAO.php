@@ -29,7 +29,9 @@ class DAO
                 . ";dbname="
                 . $this->config['database']['name'],
                 $this->config['database']['login'],
-                $this->config['database']['password']);
+                $this->config['database']['password']
+                . ";charset=UTF8"
+            );
             $this->pdo->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_WARNING);
             return $this->pdo;
         } catch (PDOException $exception) {
