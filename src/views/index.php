@@ -129,7 +129,7 @@
         <div class="container blocCarte d-flex flex-wrap justify-content-center p-2">
             <?php foreach ($film_list as $film) : ?>
                 <div class="card m-2" style="width: 12rem;">
-                    <a href="#"><img src="..." class="card-img-top" alt="..."></a>
+                    <a href="#" class="text-center"><img src="..." class="card-img-top" alt="..." style="width: 11.5rem; height:17rem;"></a>
                     <div class="card-body">
                         <p class="card-text"><?= $film['name'] ?></p>
                         <p class="card-text"><?= $film['release_date'] ?></p>
