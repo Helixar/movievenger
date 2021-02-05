@@ -41,7 +41,7 @@
                 <div class="card card-body">
                     <?php foreach ($category_list as $category) : ?>
                         <p>
-                            <a href="?category=<?= $category['slug'] ?>" role="button"><?= $category['name'] ?></a>
+                            <a href="/?category=<?= $category['slug'] ?>" role="button"><?= $category['name'] ?></a>
                         </p>
                     <?php endforeach; ?>
                 </div>
@@ -81,7 +81,7 @@
             <ul class="navbar-nav mx-auto align-items-center">
                 <?php foreach ($category_list as $category) : ?>
                     <li class="nav-item active p-2 m-2 bouton">
-                        <a class="nav-link btn" href="?category=<?= $category['slug'] ?>" role="button"><?= $category['name'] ?></a>
+                        <a class="nav-link btn" href="/?category=<?= $category['slug'] ?>" role="button"><?= $category['name'] ?></a>
                     </li>
                 <?php endforeach; ?>
             </ul>
