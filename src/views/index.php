@@ -96,25 +96,25 @@
         <nav class="container navbar navbar-expand-lg ">
             <ul class="navbar-nav mx-auto ">
                 <li class="nav-item active p-2 m-2 bouton">
-                    <a class="nav-link btn" href="#" role="button">Catégorie 1</a>
+                    <a class="nav-link btn" href="#" role="button">Comédie</a>
                 </li>
                 <li class="nav-item active p-2 m-2 bouton">
-                    <a class="nav-link btn" href="#" role="button">Catégorie 2</a>
+                    <a class="nav-link btn" href="#" role="button">Drame</a>
                 </li>
                 <li class="nav-item active p-2 m-2 bouton">
-                    <a class="nav-link btn " href="#" role="button">Catégorie 3</a>
+                    <a class="nav-link btn " href="#" role="button">Action / Aventure</a>
                 </li>
                 <li class="nav-item active p-2 m-2 bouton">
-                    <a class="nav-link btn" href="#" role="button">Catégorie 4</a>
+                    <a class="nav-link btn" href="#" role="button">Thriller / Horreur</a>
                 </li>
                 <li class="nav-item active p-2 m-2 bouton">
-                    <a class="nav-link btn " href="#" role="button">Catégorie 5</a>
+                    <a class="nav-link btn " href="#" role="button">Animation</a>
                 </li>
                 <li class="nav-item active p-2 m-2 bouton">
-                    <a class="nav-link btn " href="#" role="button">Catégorie 6</a>
+                    <a class="nav-link btn " href="#" role="button">Cinéma d'auteur</a>
                 </li>
                 <li class="nav-item active p-2 m-2 bouton">
-                    <a class="nav-link btn" href="#" role="button">Catégorie 7</a>
+                    <a class="nav-link btn" href="#" role="button">Fantastique / SF</a>
                 </li>
             </ul>
         </nav>
@@ -129,7 +129,7 @@
         <div class="container blocCarte d-flex flex-wrap justify-content-center p-2">
             <?php foreach ($film_list as $film) : ?>
                 <div class="card m-2" style="width: 12rem;">
-                    <a href="#" class="text-center"><img src="dist/img/<?=$film['image']?>" class="card-img-top" alt="..." style="width: 11.5rem; height:17rem;"></a>
+                    <a href="#"><img src="dist/img/<?=$film['image']?>" class="card-img-top" alt="..."></a>
                     <div class="card-body">
                         <p class="card-text"><?= $film['name'] ?></p>
                         <p class="card-text"><?= $film['release_date'] ?></p>
