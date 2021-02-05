@@ -31,7 +31,7 @@ create table if not exists film
     synopsis     text                                    not null,
     release_date date                                    not null,
     image        varchar(255)                            not null,
-    url          text                                    not null,
+    url          text,
     published_at datetime
 ) engine = InnoDB;
 
