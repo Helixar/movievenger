@@ -18,6 +18,8 @@ require '../src/models/Film.php';
 require '../src/models/Category.php';
 require '../src/controllers/HomeController.php';
 
+showSession(true);
+
 $home = new HomeController;
 if ($path === '/') {
     $home->index(!empty($_GET['category']) ? $_GET['category'] : false);

@@ -25,12 +25,18 @@
                         <li class="text-white nav-item active">
                             <a href="/" class="nav-link">Accueil</a>
                         </li>
-                        <li class=" text-white nav-item active">
-                            <a href="#" class="nav-link">Inscription</a>
-                        </li>
-                        <li class="text-white nav-item active">
-                            <a href="login" class="nav-link">Connexion</a>
-                        </li>
+                        <?php if (!empty($_SESSION["pseudo"])) : ?>
+                            <li class="text-white nav-item active">
+                                <span href="#" class="nav-link">Bonjour, <?= $_SESSION["pseudo"] ?> !</span>
+                            </li>
+                        <?php else : ?>
+                            <li class="text-white nav-item active">
+                                <a href="#" class="nav-link">Inscription</a>
+                            </li>
+                            <li class="text-white nav-item active">
+                                <a href="login" class="nav-link">Connexion</a>
+                            </li>
+                        <?php endif; ?>
                     </ul>
                 </div>
             </div>
@@ -62,13 +68,19 @@
                 </ul>
             </div>
             <div class="collapse navbar-collapse menu" id="navbarNav">
-                <ul class="navbar-nav  mx-auto">
-                    <li class="nav-item">
-                        <a class="nav-link" href="#">Inscription</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="login">Connexion</a>
-                    </li>
+                <ul class="navbar-nav mx-auto">
+                    <?php if (!empty($_SESSION["pseudo"])) : ?>
+                        <li class="text-white nav-item active">
+                            <span href="#" class="nav-link">Bonjour, <?= $_SESSION["pseudo"] ?> !</span>
+                        </li>
+                    <?php else : ?>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Inscription</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="login">Connexion</a>
+                        </li>
+                    <?php endif; ?>
                 </ul>
             </div>
         </nav>

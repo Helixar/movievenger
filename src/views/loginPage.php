@@ -1,3 +1,4 @@
+<?php require '../src/controllers/LoginController.php' ?>
 <!DOCTYPE html>
 <html lang="fr">
 
@@ -25,12 +26,18 @@
                         <li class="text-white nav-item active">
                             <a href="/" class="nav-link">Accueil</a>
                         </li>
-                        <li class=" text-white nav-item active">
-                            <a href="login" class="nav-link">Inscription</a>
-                        </li>
-                        <li class="text-white nav-item active">
-                            <a href="#" class="nav-link">Connexion</a>
-                        </li>
+                        <?php if (!empty($_SESSION["pseudo"])) : ?>
+                            <li class="text-white nav-item active">
+                                <span href="#" class="nav-link">Bonjour, <?= $_SESSION["pseudo"] ?> !</span>
+                            </li>
+                        <?php else : ?>
+                            <li class="text-white nav-item active">
+                                <a href="#" class="nav-link">Inscription</a>
+                            </li>
+                            <li class="text-white nav-item active">
+                                <a href="login" class="nav-link">Connexion</a>
+                            </li>
+                        <?php endif; ?>
                     </ul>
                 </div>
             </div>
@@ -55,10 +62,19 @@
             <!--fin menu mobile--->
             <!--menu bureau-->
             <div class="collapse navbar-collapse menu" id="navbarNav">
-                <ul class="navbar-nav  mx-auto">
-                    <li class="nav-item active">
-                        <a class="nav-link" href="/">Accueil<span class="sr-only"></span></a>
-                    </li>
+                <ul class="navbar-nav mx-auto">
+                    <?php if (!empty($_SESSION["pseudo"])) : ?>
+                        <li class="text-white nav-item active">
+                            <span href="#" class="nav-link">Bonjour, <?= $_SESSION["pseudo"] ?> !</span>
+                        </li>
+                    <?php else : ?>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Inscription</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="login">Connexion</a>
+                        </li>
+                    <?php endif; ?>
                 </ul>
             </div>
             <div class="collapse navbar-collapse menu" id="navbarNav">
@@ -89,19 +105,15 @@
     </div>
 
     <!--Contenu-->
-    <div class="container carte my-5"></div>
-        <form class="row justify-content-center flex-column g-5 bg-light p-2 rounded-lg">
+    <div class="container carte my-5">
+        <form class="row justify-content-center flex-column g-5 bg-light p-2 rounded-lg" action="" method="POST">
             <div class="mb-3 col-4 ml">
-                <label class="form-label">Nom:</label>
-                <input type="name" class="form-control" id="pseudo">
+                <label class="form-label">Pseudo :</label>
+                <input type="text" class="form-control" id="pseudo" name="pseudo">
             </div>
             <div class="mb-3 col-4">
-                <label class="form-label">Email</label>
-                <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
-            </div>
-            <div class="mb-3 col-4">
-                <label class="form-label">Password</label>
-                <input type="password" class="form-control" id="exampleInputEmail1">
+                <label class="form-label">Mot de passe :</label>
+                <input type="password" class="form-control" id="password" name="password">
             </div>
             <div class="mt-2 col-4">
                 <button type="submit" class="btn btn-primary">Se connecter</button>
