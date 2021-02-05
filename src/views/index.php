@@ -23,7 +23,7 @@
                 <div class="collapse" id="navbarToggleExternalContent">
                     <ul class="navbar-nav">
                         <li class="text-white nav-item active">
-                            <a href="#" class="nav-link">Accueil</a>
+                            <a href="/" class="nav-link">Accueil</a>
                         </li>
                         <li class=" text-white nav-item active">
                             <a href="#" class="nav-link">Inscription</a>
@@ -73,7 +73,7 @@
             <div class="collapse navbar-collapse menu" id="navbarNav">
                 <ul class="navbar-nav  mx-auto">
                     <li class="nav-item active">
-                        <a class="nav-link" href="#">Accueil<span class="sr-only"></span></a>
+                        <a class="nav-link" href="/">Accueil<span class="sr-only"></span></a>
                     </li>
                 </ul>
             </div>
@@ -95,27 +95,11 @@
     <div class="container d-none d-lg-block d-xl-block">
         <nav class="container navbar navbar-expand-lg ">
             <ul class="navbar-nav mx-auto ">
-                <li class="nav-item active p-2 m-2 bouton">
-                    <a class="nav-link btn" href="#" role="button">Catégorie 1</a>
-                </li>
-                <li class="nav-item active p-2 m-2 bouton">
-                    <a class="nav-link btn" href="#" role="button">Catégorie 2</a>
-                </li>
-                <li class="nav-item active p-2 m-2 bouton">
-                    <a class="nav-link btn " href="#" role="button">Catégorie 3</a>
-                </li>
-                <li class="nav-item active p-2 m-2 bouton">
-                    <a class="nav-link btn" href="#" role="button">Catégorie 4</a>
-                </li>
-                <li class="nav-item active p-2 m-2 bouton">
-                    <a class="nav-link btn " href="#" role="button">Catégorie 5</a>
-                </li>
-                <li class="nav-item active p-2 m-2 bouton">
-                    <a class="nav-link btn " href="#" role="button">Catégorie 6</a>
-                </li>
-                <li class="nav-item active p-2 m-2 bouton">
-                    <a class="nav-link btn" href="#" role="button">Catégorie 7</a>
-                </li>
+                <?php foreach ($category_list as $category) : ?>
+                    <li class="nav-item active p-2 m-2 bouton">
+                        <a class="nav-link btn" href="?category=<?= $category['slug'] ?>" role="button"><?= $category['name'] ?></a>
+                    </li>
+                <?php endforeach; ?>
             </ul>
         </nav>
     </div>
@@ -129,7 +113,7 @@
         <div class="container blocCarte d-flex flex-wrap justify-content-center p-2">
             <?php foreach ($film_list as $film) : ?>
                 <div class="card m-2" style="width: 12rem;">
-                    <a href="#" class="text-center"><img src="dist/img/<?=$film['image']?>" class="card-img-top" alt="..." style="width: 11.5rem; height:17rem;"></a>
+                    <a href="#"><img src="dist/img/<?= $film['image'] ?>" class="card-img-top" alt="..."></a>
                     <div class="card-body">
                         <p class="card-text"><?= $film['name'] ?></p>
                         <p class="card-text"><?= $film['release_date'] ?></p>

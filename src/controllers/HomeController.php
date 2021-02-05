@@ -2,11 +2,14 @@
 
 class HomeController
 {
-    public function index(): void
+    public function index(?string $byCategory): void
     {
-        $film = new Film();
-        $film_list = $film->getAll();
-        debug($film_list);
+        $filmClass = new Film();
+        $film_list = $byCategory ? $filmClass->getByCategorySlug($byCategory) : $filmClass->getAll();
+
+        $categoryClass = new Category();
+        $category_list = $categoryClass->getAll();
+        debug($category_list);
 
         require '../src/views/index.php';
     }

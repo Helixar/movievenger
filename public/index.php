@@ -22,7 +22,7 @@ showSession(true);
 
 $home = new HomeController;
 if ($path === '/') {
-    $home->index();
+    $home->index(!empty($_GET['category']) ? $_GET['category'] : false);
 }elseif ($path === '/add') {
     $home->add();
 }else {
