@@ -27,8 +27,13 @@ values (1, 'Joker', 122, 'Le film, qui relate une histoire originale inédite su
 
 
 insert into category (name, slug)
-values ('Science Fiction', 'science-fiction'),
-       ('Thriller', 'thriller');
+values ('SF / Fantastique', 'sf-fantastique'),
+       ('Thriller / Horreur', 'thriller-horreur'),
+       ('Comédie', 'comedie'),
+       ('Drame', 'drame'),
+       ('Action / Aventure', 'action-aventure'),
+       ('Animation', 'animation'),
+       ("Cinéma d'auteur", "cinema-d-auteur");
 
 insert into director (name)
 values ('Zack Snider'),
