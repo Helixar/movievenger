@@ -1,6 +1,6 @@
 <?php
 
-require '../traits/CategoryTrait.php';
+require '../src/traits/CategoryTrait.php';
 
 class Category
 {

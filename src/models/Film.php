@@ -1,6 +1,6 @@
 <?php
 
-require '../traits/FilmTrait.php';
+require '../src/traits/FilmTrait.php';
 
 class Film
 {

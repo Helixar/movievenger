@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
-    <link rel="stylesheet" href="../style.css">
+    <link rel="stylesheet" href="dist/css/style.css">
     <title>Movie Venger</title>
 </head>
 
@@ -129,7 +129,7 @@
         <div class="container blocCarte d-flex flex-wrap justify-content-center p-2">
             <?php foreach ($film_list as $film) : ?>
                 <div class="card m-2" style="width: 12rem;">
-                    <a href="#"><img src="../image/affiche1.jpg" class="card-img-top" alt="..."></a>
+                    <a href="#"><img src="..." class="card-img-top" alt="..."></a>
                     <div class="card-body">
                         <p class="card-text"><?= $film['name'] ?></p>
                         <p class="card-text"><?= $film['release_date'] ?></p>

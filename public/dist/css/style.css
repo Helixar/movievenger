@@ -2,16 +2,16 @@
 
 @font-face {
     font-family: cinema;
-    src: url(../movievenger/typos/CinemaCapitol.otf);
+    src: url(../font/CinemaCapitol.otf);
 }
 
 @font-face {
     font-family: cinemaGrafik;
-    src: url(../movievenger/typos/Cinematografica-Regular-trial.ttf);
+    src: url(../font/Cinematografica-Regular-trial.ttf);
 }
 
 body {
-    background-image: url(./image/background.jpg);
+    background-image: url(../img/background.jpg);
     background-size: cover;
 }
 

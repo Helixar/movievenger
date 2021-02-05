@@ -11,12 +11,12 @@ $request = $_SERVER['REQUEST_URI'];
 $path = parse_url($request, PHP_URL_PATH);
 $_SESSION['path'] = $path;
 
-require '../helpers/functions.php';
+require '../src/helpers/functions.php';
 //require '../traits/Database.php';
-require '../models/DAO.php';
-require '../models/Film.php';
-require '../models/Category.php';
-require '../controllers/HomeController.php';
+require '../src/models/DAO.php';
+require '../src/models/Film.php';
+require '../src/models/Category.php';
+require '../src/controllers/HomeController.php';
 
 showSession(true);
 

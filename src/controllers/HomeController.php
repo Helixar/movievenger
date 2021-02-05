@@ -8,11 +8,11 @@ class HomeController
         $film_list = $film->getAll();
         debug($film_list);
 
-        require '../views/index.php';
+        require '../src/views/index.php';
     }
 
     public function add(): void
     {
-        require '../views/formulaireFilm.php';
+        require '../src/views/formulaireFilm.php';
     }
 }
