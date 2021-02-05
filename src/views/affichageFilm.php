@@ -12,7 +12,7 @@
 <body>
     <!--HEADER--->
     <div class="container-fluid p-4 header">
-        <h1 class="text-center text-light">MOVIE VENGER</h1>
+        <h1 class="text-center text-light"><a href="/" class="nav-link">MOVIE VENGER</a></h1>
     </div>
     <!---->
     <!--MENU-->
@@ -23,7 +23,7 @@
                 <div class="collapse" id="navbarToggleExternalContent">
                     <ul class="navbar-nav">
                         <li class="text-white nav-item active">
-                            <a href="#" class="nav-link">Accueil</a>
+                            <a href="/" class="nav-link">Accueil</a>
                         </li>
                         <li class=" text-white nav-item active">
                             <a href="#" class="nav-link">Inscription</a>
@@ -32,6 +32,18 @@
                             <a href="#" class="nav-link">Connexion</a>
                         </li>
                     </ul>
+                </div>
+            </div>
+            <a class="btn d-lg-none" data-toggle="collapse" href="#collapseExample" role="button" aria-expanded="false" aria-controls="collapseExample">
+                Catégories
+            </a>
+            <div class="collapse" id="collapseExample">
+                <div class="card card-body">
+                    <?php foreach ($category_list as $category) : ?>
+                        <p>
+                            <a href="?category=<?= $category['slug'] ?>" role="button"><?= $category['name'] ?></a>
+                        </p>
+                    <?php endforeach; ?>
                 </div>
             </div>
             <!--bouton hamburger-->
@@ -45,7 +57,7 @@
             <div class="collapse navbar-collapse menu" id="navbarNav">
                 <ul class="navbar-nav  mx-auto">
                     <li class="nav-item active">
-                        <a class="nav-link" href="#">Accueil<span class="sr-only"></span></a>
+                        <a class="nav-link" href="/">Accueil<span class="sr-only"></span></a>
                     </li>
                 </ul>
             </div>
@@ -63,13 +75,34 @@
     </div>
     <!--fin menu bureau--->
     <!----FIN MENU---->
+    <!--BLOC BOUTON CATEGORIES bureau-->
+    <div class="container d-none d-lg-block d-xl-block">
+        <nav class="container navbar navbar-expand-lg ">
+            <ul class="navbar-nav mx-auto align-items-center">
+                <?php foreach ($category_list as $category) : ?>
+                    <li class="nav-item active p-2 m-2 bouton">
+                        <a class="nav-link btn" href="?category=<?= $category['slug'] ?>" role="button"><?= $category['name'] ?></a>
+                    </li>
+                <?php endforeach; ?>
+            </ul>
+        </nav>
+    </div>
 
     <!--Contenu-->
-    <div class="container carte">
-        <div class="container bg-light">
-            <h4 class="text-center">
-                <a href="#" class="nav-link titreAjout">Ajouter un film ici</a>
-            </h4>
+    <div class="container carte my-5">
+        <div class="row justify-content-center g-5 bg-light p-2 rounded-lg">
+            <div class="col-12 col-md-6 col-lg-3 card" style="width: 12rem;">
+                <a href="film?id=<?= $film['id'] ?>"><img src="dist/img/<?= $film['image'] ?>" class="card-img-top rounded mt-3" alt="..."></a>
+                <div class="card-body">
+                    <p class="card-text"><?= $film['name'] ?></p>
+                    <p class="card-text"><?= $film['release_date'] ?></p>
+                    <p class="card-text">Note <?= $film['note'] ?></p>
+                </div>
+            </div>
+            <div class="col-12 col-md-6 col-lg-9 my-5">
+                <h3>Synopsis</h3>
+                <p><?= $film['synopsis'] ?></p>
+            </div>
         </div>
     </div>
     <!---FOOTER---->

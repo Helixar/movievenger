@@ -22,6 +22,10 @@ class HomeController
     {
         $filmClass = new Film();
         $film = !empty($id) ? $filmClass->getById(intval($id)) : false;
+
+        $categoryClass = new Category();
+        $category_list = $categoryClass->getAll();
+        
         require '../src/views/affichageFilm.php';
     }
 }
