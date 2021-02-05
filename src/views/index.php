@@ -39,27 +39,11 @@
             </a>
             <div class="collapse" id="collapseExample">
                 <div class="card card-body">
-                    <p>
-                        <a href="#">Catégorie 1</a>
-                    </p>
-                    <p>
-                        <a href="#">Catégorie 2</a>
-                    </p>
-                    <p>
-                        <a href="#">Catégorie 3</a>
-                    </p>
-                    <p>
-                        <a href="#">Catégorie 4</a>
-                    </p>
-                    <p>
-                        <a href="#">Catégorie 5</a>
-                    </p>
-                    <p>
-                        <a href="#">Catégorie 6</a>
-                    </p>
-                    <p>
-                        <a href="#">Catégorie 7</a>
-                    </p>
+                    <?php foreach ($category_list as $category) : ?>
+                        <p>
+                            <a href="?category=<?= $category['slug'] ?>" role="button"><?= $category['name'] ?></a>
+                        </p>
+                    <?php endforeach; ?>
                 </div>
             </div>
             <!--bouton hamburger-->
@@ -94,7 +78,7 @@
     <!--BLOC BOUTON CATEGORIES bureau-->
     <div class="container d-none d-lg-block d-xl-block">
         <nav class="container navbar navbar-expand-lg ">
-            <ul class="navbar-nav mx-auto ">
+            <ul class="navbar-nav mx-auto align-items-center">
                 <?php foreach ($category_list as $category) : ?>
                     <li class="nav-item active p-2 m-2 bouton">
                         <a class="nav-link btn" href="?category=<?= $category['slug'] ?>" role="button"><?= $category['name'] ?></a>
