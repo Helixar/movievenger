@@ -1,0 +1,21 @@
+#--------------------------------------------------
+# Répertoire : /Root/
+#--------------------------------------------------
+
+# Le serveur doit suivre les liens symboliques :
+Options +FollowSymlinks -MultiViews
+
+# Activation du module de réécriture d'URL :
+RewriteEngine on
+
+#--------------------------------------------------
+# Règles de réécriture d'URL :
+#--------------------------------------------------
+
+RewriteCond %{THE_REQUEST} /public/([^\s?]*) [NC]
+RewriteRule ^ %1 [L,NE,R=302]
+
+RewriteRule ^((?!public/).*)$ public/$1 [L,NC]
+
+# Redirection principale
+DirectoryIndex index index.php index.html

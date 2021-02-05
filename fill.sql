@@ -1,3 +1,6 @@
+
+use movievenger;
+
 set foreign_key_checks = 0;
 truncate table user;
 truncate table film;

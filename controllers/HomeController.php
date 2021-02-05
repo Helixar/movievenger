@@ -5,7 +5,14 @@ class HomeController
     public function index(): void
     {
         $film = new Film();
-        debug($film->getAll());
+        $film_list = $film->getAll();
+        debug($film_list);
+
         require '../views/index.php';
+    }
+
+    public function add(): void
+    {
+        require '../views/formulaireFilm.php';
     }
 }

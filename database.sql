@@ -1,3 +1,6 @@
+create database if not exists movievenger /*!40100 COLLATE 'utf8mb4_general_ci' */;
+use movievenger;
+
 set foreign_key_checks = 0;
 drop table if exists user;
 drop table if exists film;
