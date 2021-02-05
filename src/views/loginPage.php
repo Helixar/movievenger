@@ -62,6 +62,13 @@
             <!--fin menu mobile--->
             <!--menu bureau-->
             <div class="collapse navbar-collapse menu" id="navbarNav">
+                <ul class="navbar-nav  mx-auto">
+                    <li class="nav-item active">
+                        <a class="nav-link" href="/">Accueil<span class="sr-only"></span></a>
+                    </li>
+                </ul>
+            </div>
+            <div class="collapse navbar-collapse menu" id="navbarNav">
                 <ul class="navbar-nav mx-auto">
                     <?php if (!empty($_SESSION["pseudo"])) : ?>
                         <li class="text-white nav-item active">
@@ -75,16 +82,6 @@
                             <a class="nav-link" href="login">Connexion</a>
                         </li>
                     <?php endif; ?>
-                </ul>
-            </div>
-            <div class="collapse navbar-collapse menu" id="navbarNav">
-                <ul class="navbar-nav  mx-auto">
-                    <li class="nav-item">
-                        <a class="nav-link" href="#">Inscription</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="login">Connexion</a>
-                    </li>
                 </ul>
             </div>
         </nav>
