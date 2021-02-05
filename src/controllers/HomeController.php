@@ -15,7 +15,18 @@ class HomeController
 
     public function add(): void
     {
+        $categoryClass = new Category();
+        $category_list = $categoryClass->getAll();
+
         require '../src/views/formulaireFilm.php';
+    }
+
+    public function login(): void
+    {
+        $categoryClass = new Category();
+        $category_list = $categoryClass->getAll();
+
+        require '../src/views/loginPage.php';
     }
 
     public function film(?string $id): void

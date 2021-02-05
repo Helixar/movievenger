@@ -23,6 +23,8 @@ if ($path === '/') {
     $home->index(!empty($_GET['category']) ? $_GET['category'] : false);
 } elseif ($path === '/add') {
     $home->add();
+} elseif ($path === '/login') {
+    $home->login();
 } elseif ($path === '/film') {
     $home->film(!empty($_GET['id']) ? $_GET['id'] : false);
 } else {
